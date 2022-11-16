@@ -1,0 +1,218 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilo del body*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: beige;
+}
+
+
+/*estilos del contenedor*/
+/* .contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "section-especialidades section-especialidades section-especialidades "
+        "section-video section-video section-video"
+        "footer footer footer"
+    ;
+    row-gap: 5px;
+    justify-items: auto;
+    align-items: center;
+} */
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .contenedor{
+        height: 100vh;
+        display: grid; 
+        grid-template-areas:
+            "header header header"
+            "main main main" 
+            "section-especialidades section-especialidades section-especialidades "
+            "section-video section-video section-video"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+    }
+}
+    @media only screen and (min-width: 768px) {
+        .contenedor{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-areas:
+                "header header header"
+                "main main main"
+                "section-especialidades section-especialidades section-especialidades "
+                "section-video section-video section-video"
+                "footer footer footer"
+            ;
+            row-gap: 5px;
+            justify-items: auto;
+            align-items: center;
+        }
+    }
+/*estilos del header*/
+.logo {
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0.5px 0.5px black)
+}
+
+.logo img {
+    height: 5rem;
+    margin-right: 10px;
+}
+
+.logo img:hover {
+    box-shadow: 1px 1px 2px black;
+    transform: scale(0.9);
+}
+
+.logo-nombre {
+    font-size: 3rem;
+}
+
+header {
+    background-color: bisque;
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly;  */
+    align-items: center;
+    padding: 10px;
+
+}
+
+h1 {
+    /* color: darkmagenta; */
+    color: rgb(184, 67, 184);
+    text-shadow: 2px 2px 3px black;
+
+
+}
+
+header div h1 span {
+    display: block;
+
+}
+
+/*remover ese subrayado feo a los links */
+a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+header nav ul li {
+    list-style: none;
+    background-color: rgb(233, 135, 66);
+    padding: 0.7rem;
+    border-radius: 60px;
+    box-shadow: 3px 2px 5px black;
+    text-shadow: 1px 1px 5px black;
+    font-weight: 600;
+    text-align: center;
+
+
+}
+
+header nav ul li a {
+    color: floralwhite;
+
+}
+
+nav ul li a:hover {
+    color: rgb(88, 38, 38);
+    box-shadow: 3px;
+
+}
+
+/*Estilos del main*/
+
+main {
+
+    /*background-color: rgb(212, 83, 60);*/
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2,
+h3 {
+    color: rgb(184, 67, 184);
+    text-shadow: 2px 2px 3px black;
+    text-justify: distribute;
+
+}
+
+main p {
+    padding: 0.8rem;
+}
+
+.section-especialidades {
+    /* background-color: rgb(61, 56, 105); */
+    grid-area: section-especialidades;
+    display: flex;
+    flex-direction: column;
+    /* vertical-align: text-top; */
+}
+
+section h3 {
+    text-align: center;
+}
+
+section div {
+    padding: 0.8rem;
+}
+
+section img {
+    width: 30em;
+
+}
+
+
+.section-video {
+    /* background-color: rgb(218, 54, 177); */
+    grid-area: section-video;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.boton-canal:hover {
+    text-shadow: 1px 1px 2px aqua;
+}
+
+h4 {
+    padding: 10px;
+}
+
+
+/*Estilos del footer*/
+footer {
+    background-color: rgb(240, 203, 158);
+    grid-area: footer;
+}
+
