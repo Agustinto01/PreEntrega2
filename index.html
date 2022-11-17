@@ -12,95 +12,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <!--CSS de Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <!--link de mi css-->
     <link rel="stylesheet" href="css/styles.css">
     <title>Estudio Jurídico Alonso y Asoc.</title>
 </head>
 <!--comentario solo para probar rama-dos de GIT-->
+
 <body>
-    <div class="contenedor">
+    <div class="container-fluid">
         <!--Encabezado del proyecto-->
-        <header id="arriba">
-            <a class="logo" href="index.html">
+        <header class="row" id="arriba">
+
+            <!-- <a class="navbar-brand" href="index.html">
+                <img class="col-sm-6 col-md-4" src="img/Logo2.png" alt="Logotipo empresa" >
+            </a> -->
+
+            <!--estructura de grillas de bootstrap contaniner fluid-->
+            <nav class="navbar navbar-expand-lg col-sm-6 col-md-8">
+                <div class="container-fluid"></div>
                 <!-- logotipo institucional-->
-                <img src="img/Logo2.png" alt="Logotipo empresa">
-            </a>
-            <nav>
-                <ul>
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="pages/nuestroestudio.html">Nuestro Estudio</a></li>
-                    <li> <a href="pages/servicios.html">Servicios</a></li>
-                    <li> <a href="pages/sobremi.html">Sobre mí</a></li>
-                    <li> <a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo2.png" alt="Logotipo empresa">
+                </a>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestroestudio.html">Nuestro Estudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestroestudio.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestroestudio.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nuestroestudio.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    </nav>
+    </header>
 
-        <main>
-            <!--Titulo y texto descriptivo-->
-            <h1>Yesica Alonso - Estudio Jurídico</h1>
-            <h2>Abogada Laboralista y Previsional</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae porro
-                obcaecati nulla! Animi
-                non neque explicabo adipisci culpa vero at, sequi fugit quidem sed quisquam minima vitae! Cum,
-                quaerat.Lorem
-                ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae porro
-                obcaecati nulla! Animi
-                non neque explicabo adipisci culpa vero at, sequi fugit quidem sed quisquam minima vitae! Cum,
-                quaerat.
-            </p>
-            <div class="boton">Contactame</div>
-            <!-- etiqueta de imagen-->
-            <img src="img/Alonso1.jpg" alt="Imagen balanza justicia">
-        </main>
+    <main>
+        <!--Titulo y texto descriptivo-->
+        <h1>Yesica Alonso - Estudio Jurídico</h1>
+        <h2>Abogada Laboralista y Previsional</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae porro
+            obcaecati nulla! Animi
+            non neque explicabo adipisci culpa vero at, sequi fugit quidem sed quisquam minima vitae! Cum,
+            quaerat.Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae porro
+            obcaecati nulla! Animi
+            non neque explicabo adipisci culpa vero at, sequi fugit quidem sed quisquam minima vitae! Cum,
+            quaerat.
+        </p>
+        <div class="boton">Contactame</div>
+        <!-- etiqueta de imagen-->
+        <img src="img/Alonso1.jpg" alt="Imagen balanza justicia">
+    </main>
 
 
-        <section class="section-especialidades">
+    <section class="section-especialidades">
 
-            <h3>Especialidades</h3>
-            <p class="parrafoDos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias excepturi,
-                ipsam sint consectetur
-                exercitationem soluta ratione nesciunt numquam nostrum, quaerat tempore at ab facilis repudiandae
-                quidem,
-                reiciendis cumque accusamus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut cum quidem
-                voluptatibus molestias consequuntur laudantium, nihil voluptate vitae neque, pariatur esse quia
-                eligendi
-                eius illo ipsa ullam saepe perspiciatis voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Aliquid itaque odio eius perferendis sunt deleniti pariatur, magnam consequuntur ullam vero
-                labore, ratione iure dicta ipsum corrupti nihil autem rem debitis? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Minus voluptatum quidem unde id veniam earum excepturi at explicabo a?
-                Quia officiis cupiditate minus! Eos, accusantium culpa enim eius nulla maxime.
-            </p>
+        <h3>Especialidades</h3>
+        <p class="parrafoDos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit alias excepturi,
+            ipsam sint consectetur
+            exercitationem soluta ratione nesciunt numquam nostrum, quaerat tempore at ab facilis repudiandae
+            quidem,
+            reiciendis cumque accusamus.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut cum quidem
+            voluptatibus molestias consequuntur laudantium, nihil voluptate vitae neque, pariatur esse quia
+            eligendi
+            eius illo ipsa ullam saepe perspiciatis voluptatum! Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Aliquid itaque odio eius perferendis sunt deleniti pariatur, magnam consequuntur ullam vero
+            labore, ratione iure dicta ipsum corrupti nihil autem rem debitis? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Minus voluptatum quidem unde id veniam earum excepturi at explicabo a?
+            Quia officiis cupiditate minus! Eos, accusantium culpa enim eius nulla maxime.
+        </p>
 
 
-        </section>
-        <section class="section-video">
-            <h4>¿Te maltratan en el trabajo? Mirá el video de nuestro especialista
-            </h4>
-            <!-- etiqueta para video-->
-            <!--enlace absoluto-->
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/2ASh49EMmsk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <div class="boton-canal"><a href="https://www.youtube.com/c/SoyJurista" target="_blank"> Visitar Canal</a>
-            </div>
-            <!-- enlace interno-->
-            <a href="#arriba">Ir arriba</a>
+    </section>
+    <section class="section-video">
+        <h4>¿Te maltratan en el trabajo? Mirá el video de nuestro especialista
+        </h4>
+        <!-- etiqueta para video-->
+        <!--enlace absoluto-->
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/2ASh49EMmsk"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <div class="boton-canal"><a href="https://www.youtube.com/c/SoyJurista" target="_blank"> Visitar Canal</a>
+        </div>
+        <!-- enlace interno-->
+        <a href="#arriba">Ir arriba</a>
 
-        </section>
-        <!-- Etiqueta para contener los derechos de autor-->
-        <footer>
-            <div>
-                <h5>Todos los derechos reservados</h5>
-            </div>
-        </footer>
+    </section>
+    <!-- Etiqueta para contener los derechos de autor-->
+    <footer>
+        <div>
+            <h5>Todos los derechos reservados</h5>
+        </div>
+    </footer>
     </div>
 
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
